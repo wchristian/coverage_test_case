@@ -1,3 +1,0 @@
-=head3 c heading
-
-Diacritics are more difficult E<aacute> la the naE<iuml>ve attachE<egrave> and the E<copy> caper, E<plusmn> some constant.  FranE<ccedilla>aise has some fun ones.
