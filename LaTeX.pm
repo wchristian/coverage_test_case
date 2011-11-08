@@ -1,4 +1,4 @@
-package Pod::PseudoPod::DOM::Role::LaTeX;
+package LaTeX;
 
 my %characters = (
     acute => sub {
