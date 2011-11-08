@@ -4,14 +4,10 @@ my %characters = (
     acute => sub {
         qq|\\'| . shift
     },
-    grave => sub {
-        qq|\\`| . shift;
-    },
 );
 
-sub emit_character {
-    $characters{'acute'}->( 'a' );
-    $characters{'grave'}->( 'a' );
-}
+$characters{'acute'}->( 'a' );
+
+sub make_module_visible_in_coverage {}
 
 1;

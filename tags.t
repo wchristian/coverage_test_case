@@ -1,8 +1,7 @@
 use strict;
 use warnings;
 
-use LaTeX;
+require LaTeX;
 
-LaTeX->emit_character();
 
 exit;
