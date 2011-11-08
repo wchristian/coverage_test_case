@@ -1,15 +1,4 @@
 package Pod::PseudoPod::DOM::Role::LaTeX;
-# ABSTRACT: an LaTeX formatter role for PseudoPod DOM trees
-
-use strict;
-use warnings;
-
-use Moose::Role;
-
-requires 'type';
-has 'tables',            is => 'rw', default => sub { {} };
-has 'filename',          is => 'ro', default => '';
-has 'emit_environments', is => 'ro', default => sub { {} };
 
 my %characters = (
     acute   => sub { qq|\\'| . shift },
