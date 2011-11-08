@@ -1,32 +1,3 @@
-=head2 B heading
-
-Z<slightly complex?heading>
-
-Encode the noble octothorpe, #, and the slash used for escaping: \.  There are
-lots of other escapable characters, including $ & % and _.  The curly braces,
-{}, get escaped too.  The tilde, ~, has something special too.
-
-"The interesting thing is that when you use double quotes," he said, "they turn
-into double single quotes going in the correct direction."
-
-The caret ^ is interesting too.
-
-(A<slightly complex?heading> links to this section! L<next_heading> links to
-the previous.)
-
 =head3 c heading
 
-When you leave out words, add an ellipsis... and get out an escaped version.
-
-Words like flame, filk, and ineffable have interesting ligatures -- and you
-need a bit of work to make the typography work out nicely.
-
-Diacritics are more difficult E<aacute> la the naE<iuml>ve attachE<egrave> and
-the E<copy> caper, E<plusmn> some constant.  FranE<ccedilla>aise has some fun
-ones.
-
-=for sidebar
-
-Hello, this is a sidebar
-
-=end
+Diacritics are more difficult E<aacute> la the naE<iuml>ve attachE<egrave> and the E<copy> caper, E<plusmn> some constant.  FranE<ccedilla>aise has some fun ones.
