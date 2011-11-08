@@ -11,37 +11,6 @@ has 'tables',            is => 'rw', default => sub { {} };
 has 'filename',          is => 'ro', default => '';
 has 'emit_environments', is => 'ro', default => sub { {} };
 
-use constant { BEFORE => 0, AFTER => 1 };
-my $escapes = "commandchars=\\\\\\{\\}";
-
-my %parent_items =
-(
-    text_list      => [ qq|\\begin{description}\n\n|,
-                        qq|\\end{description}|                          ],
-    bullet_list    => [ qq|\\begin{itemize}\n\n|,
-                        qq|\\end{itemize}|                              ],
-    number_list    => [ qq|\\begin{enumerate}\n\n|,
-                        qq|\\end{enumerate}|                            ],
-     map { $_ => [ qq|\\begin{$_}\n|, qq|\\end{$_}\n\n| ] }
-         qw( epigraph blockquote )
-);
-
-while (my ($tag, $values) = each %parent_items)
-{
-    my $sub = sub
-    {
-        my $self = shift;
-        return $values->[BEFORE]
-             . $self->emit_kids( @_ )
-             . $values->[AFTER] . "\n\n";
-    };
-
-    do {
-        no strict 'refs';
-        *{ 'emit_' . $tag } = $sub;
-    };
-}
-
 my %characters = (
     acute   => sub { qq|\\'| . shift },
     grave   => sub { qq|\\`| . shift },
