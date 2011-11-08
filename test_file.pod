@@ -1,38 +1,3 @@
-=head0 Some Document
-
-Z<startofdocument>
-
-Here is some ignorable text.
-
-=head1 A Heading
-
-Z<next_heading>
-
-This is part of some document (L<startofdocument>; A<startofdocument>).
-
-=begin programlisting
-
-  "This text should not be escaped -- it is normal $text."
-
-    #!/bin/perl does need escaping, as do \ (backslashes)
-
-=end programlisting
-
-  This indented text should come through unmodified too -- it is also "normal"
-  $text.
-
-=begin screen
-
-  This should also be $unm0d+ified
-
-=end screen
-
-=begin blockquote
-
-Blockquoted text may or may not need "escaped".  I haven't decided.
-
-=end blockquote
-
 =head2 B heading
 
 Z<slightly complex?heading>
